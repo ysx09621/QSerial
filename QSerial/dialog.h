@@ -2,7 +2,7 @@
 #define DIALOG_H
 
 #include <QDialog>
-
+#include <QSerialPort>
 namespace Ui {
 class Dialog;
 }
@@ -17,6 +17,7 @@ public:
 
 private:
     Ui::Dialog *ui;
+    QSerialPort mSerialPort;
 };
 
 #endif // DIALOG_H
